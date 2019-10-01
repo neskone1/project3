@@ -1,0 +1,57 @@
+header {
+  position: relative;
+  width: 100%;
+  background: white;
+  height:80px ;
+  color: black;
+
+  
+}
+  .logo{
+    position: absolute;
+    top:50%;
+    left: 15px;
+    font-family: gothic-open-shaded, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+  
+}
+                  nav{
+                    position: absolute;
+                    top:50%;
+                    right: 15px;
+                  }
+
+a{
+
+  font-size: 19px;
+  line-height: normal;
+  color: black;
+  
+
+}
+a:hover{
+  color: red;
+}
+
+nav{
+
+  position: absolute;
+  
+  right: 15px;
+
+}
+
+ul li {
+
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+
+
+
+
+  
+
