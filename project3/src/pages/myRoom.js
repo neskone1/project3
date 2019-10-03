@@ -1,7 +1,8 @@
 import React from "react";
-import Container from "../Container";
-import Row from "../Row";
-import Col from "../Col";
+
+import Container from "../components/Container";
+import Row from "../components/Row";
+import Col from "../components/Col";
 import "./style.css";
 
 
@@ -48,43 +49,15 @@ function myRoom () {
     
     
 
-    <div className= "card"> 
-    <div className= "img-container">
-    <img alt={ ""}
-    src={"https://stockx.com/nike-lebron-zoom-soldier-11-ultramarine"}/>
-    </div>
-    
-    
-    <div className="content">
-    <ul>
-        <li>
-            <strong>Name:</strong>{}
-        </li>
-        <li>
-        <strong>Brand:</strong>{}
-        </li>
-        <li>
-        <strong>Year:</strong>{}
-        </li>
-        <li>
-        <strong>Price:</strong>{}
-        </li>
-
-
-    </ul>
-    
-    </div>
-
-    </div>
     </Col>
         </Row>
+    </Container>
       
-      </Container>
+     
       </div>
-   
-
-    
-    );
-}
+      );
+      }
+      
+      
 
 export default myRoom;

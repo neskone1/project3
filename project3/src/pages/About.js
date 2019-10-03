@@ -1,9 +1,9 @@
 import React from "react";
-import Hero from "../Hero";
-import Container from "../Container";
-import Row from "../Row";
-import Col from "../Col";
-
+import Hero from "../components/Hero";
+import Container from "../components/Container";
+import Row from "../components/Row";
+import Col from "../components/Col";
+import "./style.css";
 function About() {
   return (
     <div>

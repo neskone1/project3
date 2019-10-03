@@ -1,9 +1,9 @@
 import React  from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
-import About from "./components/pages/About";
-import myRoom from "./components/pages/myRoom";
-import Search from "./components/pages/search";
+import About from "./pages/About";
+import myRoom from "./pages/myRoom";
+import Search from "./pages/Search";
 
 import Navbar from "./components/headerComponent/header";
 import Footer from "./components/Footer";

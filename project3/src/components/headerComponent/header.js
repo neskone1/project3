@@ -13,18 +13,27 @@ function Header() {
       <ul>
         <li className="first">
       <Link to="/">
+      <button className="btn peach-gradient color-block mb-3 mx-auto waves-effect">
         About
+      </button>
       </Link>
-      </li>
+      </li> 
       <li>
             <Link
-              to="/myRoom">My Room
+          
+              to="/myRoom"> 
+              <button className="btn peach-gradient color-block mb-3 mx-auto waves-effect">
+              My Room
+              </button>
               
             </Link>
           </li>
           <li>
             <Link
-              to="/Search">Search
+              to="/Search">
+              <button className="btn aqua-gradient color-block mb-3 mx-auto waves-effect">
+              Search
+              </button>
               
             </Link>
           </li>
