@@ -18,6 +18,15 @@ function Header() {
       </button>
       </Link>
       </li> 
+
+      <li className="second">
+      <Link to="/newsFeed">
+      <button className="btn peach-gradient color-block mb-3 mx-auto waves-effect">
+      News Feed
+      </button>
+      </Link>
+      </li> 
+
       <li>
             <Link
           
