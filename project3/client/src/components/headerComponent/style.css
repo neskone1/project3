@@ -1,0 +1,72 @@
+header {
+  position: relative;
+  width: 100%;
+  background: rgb(255, 241, 241);
+  height:80px ;
+  color: black;
+
+  
+}
+  .logo{
+    position: absolute;
+    top:35%;
+    left: 15px;
+    font-family: gothic-open-shaded, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+  
+}
+                  nav{
+                    position: absolute;
+                    top:15%;
+                    right: 15px;
+                    
+                  }
+
+a{
+
+  font-size: 19px;
+  font-family: balboa-plus-fill, sans-serif;
+  line-height: normal;
+  color: rgb(14, 13, 13);
+  
+
+}
+
+
+nav{
+
+  position: absolute;
+  
+  right: 10px;
+
+}
+
+ul li {
+
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 10px;
+  
+  
+  
+ 
+}
+.btn {
+
+  font-size: 20px;
+  box-shadow: 20px;
+  
+  
+}
+.btn:hover{
+  color: rgb(0, 0, 0);
+}
+
+
+
+
+
+  
+
