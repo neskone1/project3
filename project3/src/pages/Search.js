@@ -26,7 +26,7 @@ function Search() {
       <Container style={{ marginTop: 30 }}>
         <Row>
           <Col size="md-12">
-            <h1>Ready for a new</h1>
+            <h1>Add unlimited sneakers to your Room!</h1>
 
           </Col>
         </Row>

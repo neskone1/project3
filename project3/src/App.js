@@ -10,6 +10,7 @@ import Navbar from "./components/headerComponent/header";
 import Footer from "./components/Footer";
 import Wrapper from "./components/Wrapper";
 
+
 function App() {
   return (
     <Router>
@@ -21,6 +22,7 @@ function App() {
           <Route exact path="/myRoom" component={myRoom} />
           <Route exact path="/search" component={Search} />
           <Route exact path="/newsFeed" component={newsFeed} />
+          
           
         </Wrapper>
         <Footer />
