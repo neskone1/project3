@@ -3,10 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Login</title>
+    <title>Homepage</title>
 </head>
 
 <body>
+
     <nav>
         <ul>
             <% if (user) { %>
@@ -20,11 +21,13 @@
         </ul>
     </nav>
     <header>
-        <h1>Log In Using...</h1>
+        <h1>Welcome to your profile, <%=user.username%></h1>
     </header>
     <main>
-        <a class="google-btn" href="/auth/google">Google+</a>
+        <img src="<%=user.thumbnail% >"/>
+        <p>Insert other info here...</p>
     </main>
+
 </body>
 
 </html>
