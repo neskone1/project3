@@ -7,5 +7,8 @@ module.exports = {
     },
     mongodb: {
         dbURI: "mongodb://reb2039607:project3@ds349587.mlab.com:49587/heroku_7153thl0"
+    },
+    session: {
+        cookieKey:"itstrickytorockarhymetorockarhymethatsrightontime"
     }
 };
