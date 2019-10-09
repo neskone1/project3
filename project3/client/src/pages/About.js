@@ -3,8 +3,15 @@ import Hero from "../components/Hero";
 import Container from "../components/Container";
 import Row from "../components/Row";
 import Col from "../components/Col";
+import API from '../utils/API';
 import "./style.css";
 function About() {
+
+  let testAPI = () => {
+    console.log('TEST BUTTON.')
+    API.getShoes().then(res => console.log(res.data));
+  }
+
   return (
     <div>
       <Hero backgroundImage="http://ward1.com/wp-content/uploads/Ward-1-Design-Sneaker-Room.jpeg">
@@ -54,6 +61,7 @@ function About() {
               interdum elit pulvinar eu. Quisque vitae quam dapibus, vestibulum mauris quis, laoreet
               massa.
             </p>
+            <button onClick={testAPI}>TEST</button>
           </Col>
         </Row>
       </Container>

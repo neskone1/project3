@@ -1,5 +1,7 @@
 import axios from "axios";
-
-axios.get("/scrape", function(req, res){
-    
-})
+export default {
+    getShoes: function () {
+        console.log("TEST API");
+        return axios.get("/api/shoe/")
+    }
+}
