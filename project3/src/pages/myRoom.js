@@ -41,10 +41,7 @@ function myRoom () {
         <li>
         <strong>Year:</strong>{}
         </li>
-        <hr></hr> 
-        <li>
-        <strong>Price:</strong>{}
-        </li>
+        
 
     </ul>
     

@@ -18,6 +18,9 @@ function Search() {
   <input class="form-control" type="text" placeholder="Search" aria-label="Search"></input>
 </div>
           <button class="btn aqua-gradient waves-effect" type="submit">Search</button>
+          <button {...props} style={{ float: "right", marginBottom: 10 }} className="btn btn-success">
+      {props.children}
+    </button>
 
 
 
