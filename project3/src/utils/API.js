@@ -14,7 +14,7 @@ export default {
     return axios.delete("/api/shoes/" + id);
   },
   // Saves a shoe to the database
-  saveShoes: function(bookData) {
+  saveShoes: function(shoesData) {
     return axios.post("/api/shoes", shoesData);
   }
 };
