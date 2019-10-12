@@ -19,14 +19,7 @@ function About() {
         </Row>
         <Row>
           <Col size="md-12">
-          
-          <div class="weather-container">
-          <img class="icon">
-          <p class="weather"></p>
-          <p class="temp"></p>
-          </img>
-          </div>
-          
+
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc aliquet diam tortor, id
               consequat mauris ullamcorper eu. Orci varius natoque penatibus et magnis dis
@@ -66,11 +59,6 @@ function About() {
         </Row>
       </Container>
     </div>
-    // <div class="weather-container">
-    // <img class="icon">
-    // <p class="weather"></p>
-    // </img>
-    // </div>
   );
 }
 
