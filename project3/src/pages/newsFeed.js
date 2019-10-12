@@ -14,7 +14,7 @@ function newsFeed () {
         <Container style={{ marginTop: 20, }}>
         <Row>
           <Col size="md-12">
-            <h1>Welcome To News Feed</h1>
+            <h1>Looks</h1>
           </Col>
         </Row>
         <Row>
@@ -22,7 +22,7 @@ function newsFeed () {
     <div id="news-feed" > 
     <div className= "img-container">
     <img alt={ ""}
-    src={"https://cask.scotch.io/2014/10/react-tweets-demo.png"}/>
+    src={"https://image.goat.com/crop/750/attachments/micropost_pictures/images/026/629/485/original/temp1569904146.jpeg"}/>
     </div>
     
     
