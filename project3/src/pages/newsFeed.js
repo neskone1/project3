@@ -18,7 +18,7 @@ function newsFeed () {
           </Col>
         </Row>
         <Row>
-          <Col size="lg-12">
+          <Col size="md-12">
     <div id="news-feed" > 
     <div className= "img-container">
     <img alt={ ""}
