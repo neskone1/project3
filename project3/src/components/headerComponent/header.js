@@ -16,7 +16,16 @@ function Header() {
       </div>
     <nav>
       <ul>
-        <li className="first">
+          <li className="first">
+            <Link
+              to="/Login">
+              <button className="btn peach-gradient color-block mb-3 mx-auto waves-effect">
+              Login
+              </button>
+              
+            </Link>
+          </li>
+        <li className="second">
       <Link to="/">
       <button className="btn peach-gradient color-block mb-3 mx-auto waves-effect">
         About
@@ -24,7 +33,7 @@ function Header() {
       </Link>
       </li> 
 
-      <li className="second">
+      <li>
       <Link to="/newsFeed">
       <button className="btn peach-gradient color-block mb-3 mx-auto waves-effect">
       News Feed
@@ -51,6 +60,9 @@ function Header() {
               
             </Link>
           </li>
+
+
+
         </ul>
       
     </nav>
