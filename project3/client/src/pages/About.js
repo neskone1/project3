@@ -3,14 +3,10 @@ import Hero from "../components/Hero";
 import Container from "../components/Container";
 import Row from "../components/Row";
 import Col from "../components/Col";
-import API from '../utils/API';
+// import API from '../utils/API';
 import "./style.css";
 function About() {
 
-  let testAPI = () => {
-    console.log('TEST BUTTON.')
-    API.getShoes().then(res => console.log(res.data));
-  }
 
   return (
     <div>
@@ -61,7 +57,7 @@ function About() {
               interdum elit pulvinar eu. Quisque vitae quam dapibus, vestibulum mauris quis, laoreet
               massa.
             </p>
-            <button onClick={testAPI}>TEST</button>
+            {/* <button onClick={testAPI}>TEST</button> */}
           </Col>
         </Row>
       </Container>
