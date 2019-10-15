@@ -1,6 +1,6 @@
 .card {
-    background: rgb(162, 158, 158);
-    color: white;
+  background:rgb(255, 255, 255);
+  color: rgb(43, 43, 43);
     border-radius: 2px;
     height: 470px;
     margin: 1rem;
@@ -63,4 +63,23 @@
     
   }
 
-  
+  #Share.btn.purple-gradient.color-block.mb-3.mx-auto.waves-effect
+{
+
+ left: 10px;
+  }
+
+  #searchCard{
+
+    background:rgb(255, 255, 255);
+    color: rgb(43, 43, 43);
+    border-radius: 2px;
+    height: 520px;
+    margin: 1rem;
+    position: relative;
+    width: 325px;
+    box-shadow: 0 3px 6px rgb(29, 29, 29), 0 3px 6px #999;
+    text-align: left;
+
+
+  }

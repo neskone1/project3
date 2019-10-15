@@ -14,7 +14,12 @@ function Header() {
       </div>
       <div className="logo">
       </div>
-    <nav>
+
+      
+    
+    
+    
+    <nav >
       <ul>
         <li className="first">
       <Link to="/">
