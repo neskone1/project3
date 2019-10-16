@@ -1,36 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./style.css";
-import ShoeLogo from "../../ShoeLogo.svg"
-
-
 
 // Depending on the current path, this component sets the "active" class on the appropriate navigation link item
 function Header() {
   return (
     <header>
-      <div>
-      <img id="shoeLogoNav"  alt={ "shoes"} src={ShoeLogo}/>
-      </div>
       <div className="logo">
+      Sneaker Room
       </div>
-
-      
-    
-    
-    
-    <nav >
+    <nav>
       <ul>
-          <li className="first">
-            <Link
-              to="/Login">
-              <button className="btn peach-gradient color-block mb-3 mx-auto waves-effect">
-              Login
-              </button>
-              
-            </Link>
-          </li>
-        <li className="second">
+        <li className="first">
       <Link to="/">
       <button className="btn peach-gradient color-block mb-3 mx-auto waves-effect">
         About
@@ -38,7 +19,7 @@ function Header() {
       </Link>
       </li> 
 
-      <li>
+      <li className="second">
       <Link to="/newsFeed">
       <button className="btn peach-gradient color-block mb-3 mx-auto waves-effect">
       News Feed
@@ -65,9 +46,6 @@ function Header() {
               
             </Link>
           </li>
-
-
-
         </ul>
       
     </nav>
