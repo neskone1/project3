@@ -24,6 +24,7 @@ function App() {
           <Route exact path="/newsFeed" component={newsFeed} />
           
           
+          
         </Wrapper>
         <Footer />
       </div>
