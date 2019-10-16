@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import Container from "../components/Container";
 import Row from "../components/Row";
@@ -48,6 +49,14 @@ function myRoom () {
     </div>
 
     </div>
+    <Link
+          
+          to="/myRoom"> 
+          <button id= "Remove" className="btn btn-red color-block mb-3 mx-auto waves-effect">
+         Remove
+          </button>
+          
+        </Link>
     
     
 
