@@ -1,9 +1,11 @@
 import axios from "axios";
 
+
 export default {
   // Gets all shoes
   getShoes: function() {
-    return axios.get("/api/shoes");
+    console.log("TEST API");
+    return axios.get("/api/shoes/scrape");
   },
   // Gets shoes with the given id
   getShoes: function(id) {
