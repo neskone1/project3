@@ -12,9 +12,9 @@ module.exports = {
             const results = [];
 
             $(".item").each(function(i, element) {
-                const imgLink = $(element).find("a").children("img").attr("src");
+                const imgLink = $(element).find("a").children("img").attr("data-yo-src");
                 results.push({ link: imgLink });
-                return i < 1;
+                return i < 10;
             }) 
 
             console.log(results);
