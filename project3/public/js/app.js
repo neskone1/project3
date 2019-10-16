@@ -10,7 +10,7 @@ const passport = require("passport");
 
 
 //set up view engine
-app.set("view engine", "ejs");
+app.set("view engine", "js");
 
 app.use(cookieSession({
     maxAge: 24 * 60 *60 * 1000, //one day in milliseconds
