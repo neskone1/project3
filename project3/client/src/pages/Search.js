@@ -44,39 +44,21 @@ class Search extends Component {
           <Container style={{ marginTop: 30 }}>
             <Row>
               <Col size="md-12">
-                <h1>Ready for a new pair?..</h1>
+                <h1>Browse if you dare.. </h1>
 
               </Col>
             </Row>
             <Row>
-              <button onClick={testAPI}>TEST</button>
-                <Col size="lg-12">
-                  <div className= "card"> 
-                    <div className= "img-container">
-                        <img alt={ ""}
-                        src={""}/>
+              {/* <button onClick={}>TEST</button> */}
+          
+              <Col size="lg-12">
+                {this.state.shoes.map(shoe => (
+                  <div className="card">
+                    <div className="img-container">
+                      <img alt={""} src={shoe.link} />
                     </div>
-      
-                    <div className="content">
-                      <ul>
-                        <li>
-                          <strong>Name:</strong>{}
-                        </li>
-                        <li>
-                          <strong>Brand:</strong>{}
-                        </li>
-                        <li>
-                          <strong>Year:</strong>{}
-                        </li>
-                        <li>
-                          <strong>Price:</strong>{}
-                        </li>
-
-                      </ul>
-                      
-                    </div>
-
                   </div>
+                ))};                        
               </Col>
             </Row>
 
