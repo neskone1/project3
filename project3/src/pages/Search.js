@@ -3,6 +3,9 @@ import Hero from "../components/Hero";
 import Container from "../components/Container";
 import Row from "../components/Row";
 import Col from "../components/Col";
+import ShoeLogo from "../ShoeLogo.svg"
+import { Link } from "react-router-dom";
+
 
 import "./style.css";
 
@@ -28,6 +31,54 @@ function Search() {
         <Row>
           <Col size="md-12">
             <h1>Add unlimited sneakers to your Room!</h1>
+
+
+            <div id="searchCard" className= "card">
+    
+    <div className= "img-container">
+    <img id="shoeLogo" alt={ "shoes"}
+    src={ShoeLogo}/>
+    </div>
+    
+    
+    <div className="content">
+    <ul>
+        <li>
+            <strong>Name:</strong>{}
+        </li>
+        <hr></hr> 
+        <li>
+        <strong>Brand:</strong>{}
+        </li>
+        <hr></hr> 
+        <li>
+        <strong>Year:</strong>{}
+        </li>
+        <hr></hr> 
+        <Link
+          
+              to="/myRoom"> 
+              <button id= "Add" className="btn purple-gradient color-block mb-3 mx-auto waves-effect">
+              Add
+              </button>
+              
+            </Link>
+
+            <Link
+          
+              to="/myRoom"> 
+              <button id= "Share" className="btn purple-gradient color-block mb-3 mx-auto waves-effect">
+              Share
+              </button>
+              
+            </Link>
+        
+
+    </ul>
+    
+    </div>
+
+    </div>
 
           </Col>
         </Row>
