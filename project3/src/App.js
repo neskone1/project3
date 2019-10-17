@@ -5,10 +5,11 @@ import About from "./pages/About";
 import myRoom from "./pages/myRoom";
 import Search from "./pages/Search";
 import newsFeed from "./pages/newsFeed";
-
+import Login from "./pages/Login"
 import Navbar from "./components/headerComponent/header";
 import Footer from "./components/Footer";
 import Wrapper from "./components/Wrapper";
+
 
 function App() {
   return (
@@ -21,6 +22,9 @@ function App() {
           <Route exact path="/myRoom" component={myRoom} />
           <Route exact path="/search" component={Search} />
           <Route exact path="/newsFeed" component={newsFeed} />
+          <Route exact path="/Login" component={Login} />
+          
+          
           
         </Wrapper>
         <Footer />
