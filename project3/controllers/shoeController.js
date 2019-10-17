@@ -12,8 +12,13 @@ module.exports = {
             const results = [];
 
             $(".item").each(function(i, element) {
-                const imgLink = $(element).find("a").children("img").attr("data-yo-src");
-                results.push({ link: imgLink });
+                const imgLink = !($(element).find("a").children("img").attr("data-yo-src")) ? $(element).find("a").children("img").attr("src") : $(element).find("a").children("img").attr("data-yo-src");
+                const shoeName = $(element).find(".item-info").children().children().text();
+
+                results.push({ 
+                    link: imgLink,
+                    name: shoeName 
+                });
                 return i < 10;
             }) 
 
@@ -21,5 +26,7 @@ module.exports = {
             res.json(results);
         })
         .catch(err => console.log(err));
-    } 
+    },
+
+
 }

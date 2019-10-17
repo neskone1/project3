@@ -48,17 +48,17 @@ class Search extends Component {
 
               </Col>
             </Row>
-            <Row>
-              {/* <button onClick={}>TEST</button> */}
-          
+            <Row>  
               <Col size="lg-12">
-                {this.state.shoes.map(shoe => (
-                  <div className="card">
-                    <div className="img-container">
-                      <img alt={""} src={shoe.link} />
+                <Row>
+                  {this.state.shoes.map(shoe => (
+                    <div className="card">
+                      <div className="img-container">
+                        <img alt={"Picture Coming Soon"} src={shoe.link} />
+                      </div>
                     </div>
-                  </div>
-                ))};                        
+                  ))};
+                </Row>                        
               </Col>
             </Row>
 
