@@ -20,7 +20,7 @@ const images = [
 function newsFeed() {
   return (
     <div>
-      <Container style={{ marginTop: 20, }}>
+      <Container style={{ marginTop: 10, }}>
         <Row>
           <Col size="md-12">
             <h1>Looks</h1>
@@ -70,12 +70,13 @@ function App() {
         <GalleryImage objectFit="contain" key={image} src={image} />
       ))}
     </Gallery>
+    
   );
+  
 }
 
 const rootElement = document.getElementById("root");
-// ReactDOM.render(<App />, rootElement);
-
+ReactDOM.render(<App />, rootElement);
 
 
 export default newsFeed;
