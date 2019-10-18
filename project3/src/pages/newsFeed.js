@@ -7,6 +7,7 @@ import Row from "../components/Row";
 import Col from "../components/Col";
 import "./style.css";
 
+
 const images = [
   "https://image.goat.com/crop/3500/attachments/micropost_pictures/images/017/071/235/original/temp1545076054.jpeg",
   "https://image.goat.com/crop/3500/attachments/micropost_pictures/images/016/697/676/original/temp1543954087.jpeg",
@@ -15,7 +16,6 @@ const images = [
   "https://image.goat.com/crop/3500/attachments/micropost_pictures/images/013/769/006/original/temp1533578886.jpeg",
   "https://image.goat.com/crop/3500/attachments/micropost_pictures/images/021/685/991/original/temp1558404697.jpeg"
 ];
-
 
 function newsFeed() {
   return (
@@ -27,7 +27,7 @@ function newsFeed() {
           </Col>
         </Row>
         <Row>
-
+        
           <div className="content">
 
           </div>
@@ -58,8 +58,8 @@ function App() {
     <Gallery
       style={{
         background: "black",
-        height: "100vh",
-        width: "100vw"
+        height: "50vh",
+        width: "50vw"
       }}
       index={index}
       onRequestChange={i => {
@@ -76,7 +76,7 @@ function App() {
 }
 
 const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
+ReactDOM.render(App, rootElement);
 
 
 export default newsFeed;
