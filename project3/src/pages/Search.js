@@ -1,24 +1,41 @@
-import React from "react";
+import React, { Component } from "react";
 import Hero from "../components/Hero";
 import Container from "../components/Container";
 import Row from "../components/Row";
 import Col from "../components/Col";
 import ShoeLogo from "../ShoeLogo.svg"
 import { Link } from "react-router-dom";
+import API from "../utils/API";
 
 
 import "./style.css";
 
-function Search() {
-  return (
+class Search extends Component {
+  state = {
+    shoes: []
+  };
 
+  componentDidMount() {
+    this.shoeScrape();
+  };
+
+
+  shoeScrape = () => {
+    console.log('TEST BUTTON.')
+    API.getShoes()
+    .then(res => this.setState({ shoes: res.data }))
+    .catch(err => console.log(err));
+  };
+
+  render() {
+    return (
     <div>
       <Hero backgroundImage="http://ward1.com/wp-content/uploads/Ward-1-Design-Sneaker-Room.jpeg">
         <h1>Sneaker Room</h1>
         <h2> Search for your next pair!</h2>
         
         <div class="active-pink-3 active-pink-4 mb-4">
-  <input class="form-control" type="text" placeholder="Search" aria-label="Search"></input>
+  <input class="form-control"  type="text" placeholder="Search" aria-label="Search"></input>
 </div>
           <button class="btn aqua-gradient waves-effect" type="submit">Search</button>
          
@@ -31,14 +48,24 @@ function Search() {
         <Row>
           <Col size="md-12">
             <h1>Add unlimited sneakers to your Room!</h1>
-
-
+            </Col>
+            <Col size="lg-12">
+            
+          {this.state.shoes.map(shoe => (
+            
             <div id="searchCard" className= "card">
     
-    <div className= "img-container">
-    <img id="shoeLogo" alt={ "shoes"}
-    src={ShoeLogo}/>
+    <div className= "img-container"> 
+    
+    <img id="shoeLogo" alt={ " "} 
+    src={shoe.link}/>
     </div>
+
+    ))};                        
+              
+   
+    
+    
     
     
     <div className="content">
@@ -76,18 +103,22 @@ function Search() {
 
     </ul>
     
-    </div>
-
-    </div>
+          </div>
+          </div>
+    
+          ))}; 
 
           </Col>
         </Row>
         <Row>
 
         </Row>
+        
       </Container>
     </div>
-  );
-}
+    
+    
+    )}
+  }
 
 export default Search;
