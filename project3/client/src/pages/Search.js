@@ -4,6 +4,7 @@ import Container from "../components/Container";
 import Row from "../components/Row";
 import Col from "../components/Col";
 import API from "../utils/API";
+import ShoeCard from "../components/shoeCard"
 
 import "./style.css";
 
@@ -52,11 +53,7 @@ class Search extends Component {
               <Col size="lg-12">
                 <Row>
                   {this.state.shoes.map(shoe => (
-                    <div className="card">
-                      <div className="img-container">
-                        <img alt={"Picture Coming Soon"} src={shoe.link} />
-                      </div>
-                    </div>
+                    <ShoeCard alt="" src={shoe.link} />
                   ))};
                 </Row>                        
               </Col>

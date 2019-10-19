@@ -13,13 +13,15 @@ module.exports = {
 
             $(".item").each(function(i, element) {
                 const imgLink = !($(element).find("a").children("img").attr("data-yo-src")) ? $(element).find("a").children("img").attr("src") : $(element).find("a").children("img").attr("data-yo-src");
-                const shoeName = $(element).find(".item-info").children().children().text();
+                const shoeName = $(element).find(".item-info").children().text().split("\n")[0];
+                // const shoePrice = $(element).find(".item-info").children().text().split("\n")[5];
 
                 results.push({ 
                     link: imgLink,
-                    name: shoeName 
+                    name: shoeName,
+                    // price: shoePrice
                 });
-                return i < 10;
+                return i < 12;
             }) 
 
             console.log(results);

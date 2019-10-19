@@ -57,7 +57,6 @@ function About() {
               interdum elit pulvinar eu. Quisque vitae quam dapibus, vestibulum mauris quis, laoreet
               massa.
             </p>
-            {/* <button onClick={testAPI}>TEST</button> */}
           </Col>
         </Row>
       </Container>
