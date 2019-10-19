@@ -12,23 +12,14 @@ module.exports = {
             const results = [];
 
             $(".item").each(function(i, element) {
-                const imgLink = !($(element).find("a").children("img").attr("data-yo-src")) ? $(element).find("a").children("img").attr("src") : $(element).find("a").children("img").attr("data-yo-src");
-                const shoeName = $(element).find(".item-info").children().text().split("\n")[0];
-                // const shoePrice = $(element).find(".item-info").children().text().split("\n")[5];
-
-                results.push({ 
-                    link: imgLink,
-                    name: shoeName,
-                    // price: shoePrice
-                });
-                return i < 12;
+                const imgLink = $(element).find("a").children("img").attr("data-yo-src");
+                results.push({ link: imgLink });
+                return i < 10;
             }) 
 
             console.log(results);
             res.json(results);
         })
         .catch(err => console.log(err));
-    },
-
-
+    } 
 }
