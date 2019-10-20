@@ -13,8 +13,12 @@ module.exports = {
 
             $(".item").each(function(i, element) {
                 const imgLink = !$(element).find("a").children("img").attr("data-yo-src") ? $(element).find("a").children("img").attr("src") : $(element).find("a").children("img").attr("data-yo-src");
-                results.push({ link: imgLink });
-                return i < 10;
+                const shoeName = $(element).children().children().text().split("\n")[0];
+                results.push({ 
+                    link: imgLink,
+                    shoeName: shoeName
+                });
+                return i < 11;
             }) 
 
             console.log(results);
