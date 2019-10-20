@@ -4,7 +4,7 @@ const cheerio = require("cheerio");
 
 console.log("helo")
 
-module.exports = {
+module.exports = {          
     shoeScrape: (req, res) => {
         axios.get("https://www.kicksusa.com/sale-mens-shoes.html")
         .then(function(response) {
@@ -12,7 +12,7 @@ module.exports = {
             const results = [];
 
             $(".item").each(function(i, element) {
-                const imgLink = $(element).find("a").children("img").attr("data-yo-src");
+                const imgLink = !$(element).find("a").children("img").attr("data-yo-src") ? $(element).find("a").children("img").attr("src") : $(element).find("a").children("img").attr("data-yo-src");
                 results.push({ link: imgLink });
                 return i < 10;
             }) 
