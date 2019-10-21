@@ -43,13 +43,45 @@ class Search extends Component {
           </Col>
         </Row>
         <Row>
-          <Col size="lg-12">
-            {this.state.shoes.map(shoe => (
-              <ShoeCard alt="" src={shoe.link} />
-            ))}; 
+          <Col size="md-12">
+            <Row>
+              {this.state.shoes.map(shoe => (
+                <ShoeCard alt="" src={shoe.link} />
+              ))};
+            </Row>   
           </Col>
         </Row>
       </Container>
     </div>
   )}}
 export default Search;
+
+// {/* <div className="content">
+  //     <ul>
+  //      <li>
+  //        <strong>Name:</strong>{}
+  //      </li>
+  //         <hr></hr> 
+  //      <li>
+  //        <strong>Brand:</strong>{}
+  //      </li>
+  //         <hr></hr> 
+  //      <li>
+  //        <strong>Year:</strong>{}
+  //      </li>
+  //         <hr></hr> 
+  //      <Link to="/myRoom"> 
+//          <button id= "Add" className="btn purple-gradient color-block mb-3 mx-auto waves-effect">
+//            Add
+//          </button>
+//        </Link>
+//        <Link to="/myRoom">
+  //        <button id= "Share" className="btn purple-gradient color-block mb-3 mx-auto waves-effect">
+  //          Share
+  //        </button>               
+  //      </Link>
+  //    </ul>
+    // </div> */}
+          
+
+    

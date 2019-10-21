@@ -7,12 +7,12 @@ import "./style.css";
 
 function ShoeCard(props) {
   return (
-        <div className="card">
+        <div className="card" id="cardBox">
             <div className="img-container">
                 <img alt={props.alt} src={props.src}/>
             </div>
           <Row>
-              <Col size="md-12">
+              <Col size="sm-6">
                   <span id="flame">
                       <IoMdFlame />
                   </span>
@@ -25,7 +25,7 @@ function ShoeCard(props) {
               </Col>
           </Row>
   
-    </div>
+        </div>
   )
   }
   
