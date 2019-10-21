@@ -17,9 +17,9 @@ module.exports = {
                 const price = $(element).find(".item-info").find("p.special-price").find(".price").text().split("\n")[1];
                 
                 results.push({ 
-                    link: imgLink,
                     shoeName: shoeName,
-                    price: price
+                    price: price,
+                    link: imgLink
                 })
                 return i < 11;
             }) 
@@ -30,7 +30,7 @@ module.exports = {
         .catch(err => console.log(err));
     },
     
-    myRoom: (req, res) => {
+    shoeToRoom: (req, res) => {
         db.shoes
         .create(req.body)
         .then(dbModel => res.json(dbModel))
