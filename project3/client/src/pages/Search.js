@@ -53,7 +53,7 @@ class Search extends Component {
               <Col size="lg-12">
                 <Row>
                   {this.state.shoes.map(shoe => (
-                    <ShoeCard alt="" src={shoe.link} />
+                    <ShoeCard alt="" src={shoe.link} name={shoe.shoeName} price={shoe.price} />
                   ))};
                 </Row>                        
               </Col>

@@ -2,9 +2,8 @@
     font-size: 55px;
     margin-left: 8px;
     color: orangered;
-    flex: auto;
-},
+}
 
 #info {
-    justify-content: right;
+    
 }

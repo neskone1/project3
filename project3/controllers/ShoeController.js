@@ -1,6 +1,6 @@
 const axios = require("axios");
 const cheerio = require("cheerio");
-// const request = require("request");
+const db = require("../models");
 
 console.log("helo")
 
@@ -14,10 +14,13 @@ module.exports = {
             $(".item").each(function(i, element) {
                 const imgLink = !$(element).find("a").children("img").attr("data-yo-src") ? $(element).find("a").children("img").attr("src") : $(element).find("a").children("img").attr("data-yo-src");
                 const shoeName = $(element).children().children().text().split("\n")[0];
+                const price = $(element).find(".item-info").find("p.special-price").find(".price").text().split("\n")[1];
+                
                 results.push({ 
                     link: imgLink,
-                    shoeName: shoeName
-                });
+                    shoeName: shoeName,
+                    price: price
+                })
                 return i < 11;
             }) 
 
@@ -25,5 +28,12 @@ module.exports = {
             res.json(results);
         })
         .catch(err => console.log(err));
-    } 
+    },
+    
+    myRoom: (req, res) => {
+        db.shoes
+        .create(req.body)
+        .then(dbModel => res.json(dbModel))
+        .catch(err => res.status(422).json(err))
+    }
 }

@@ -10,14 +10,15 @@ function ShoeCard(props) {
             <img alt={props.alt} src={props.src}/>
         </div>
         <Row>
-            <Col size="md-6">
+            <Col size="md-12">
                 <span id="flame">
                     <IoMdFlame />
                 </span>
             
                 <span id="info">
-                    Name: 
-                    Price:
+                    Name: {props.name}
+                    <br></br> 
+                    Price: {props.price}
                 </span>
             </Col>
         </Row>
