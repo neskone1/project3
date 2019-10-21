@@ -1,8 +1,10 @@
+//authentication imports
 const express = require("express");
 const jwt = require("express-jwt");
 const jwks - require("jwks-rsa");
 const path = require("path");
-
+const config = require("./config")
+const router = express.Router();
 
 const mongoose = require("mongoose");
 const routes = require("./routes");
@@ -11,9 +13,6 @@ const PORT = process.env.PORT || 3001;
 
 //======================================================================//
 //scratched the old code, will be using auth0
-
-
-
 
 
 

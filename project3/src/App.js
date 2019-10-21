@@ -9,7 +9,45 @@ import Login from "./pages/Login"
 import Navbar from "./components/headerComponent/header";
 import Footer from "./components/Footer";
 import Wrapper from "./components/Wrapper";
+import Main from "./components/Main";
+// import Auth from "./service";
 
+
+// class AppLogin extends Component {
+//   constructor(props) {
+//     super(props);
+
+//     auth.loginCallback = this.loggedIn.bind(this);
+//     auth.logoutCallback = this.loggedOut.bind(this);
+
+//     this.state = { loggedIn: false };
+//   }
+
+//   loggedIn() {
+//     this.setState({ loggedIn: true });
+//   }
+
+//   loggedOut() {
+//     this.setState({ loggedIn: false });
+//   }
+
+//   render() {
+//     return (
+//       <div>
+//         {this.state.loggedIn ? <Login /> : <newsFeed />}
+//         {this.state.loggedIn ? (
+//           <button onClick={() => auth.logout()} className="log-in">
+//             Log Out
+//           </button>
+//         ) : (
+//           <button onClick={() => auth.login()} className="log-in">
+//             Log In
+//           </button>
+//         )}
+//       </div>
+//     );
+//   }
+// }
 
 function App() {
   return (
@@ -23,10 +61,10 @@ function App() {
           <Route exact path="/search" component={Search} />
           <Route exact path="/newsFeed" component={newsFeed} />
           <Route exact path="/Login" component={Login} />
-          
-          
+                
           
         </Wrapper>
+        <Main />
         <Footer />
       </div>
     </Router>
@@ -34,3 +72,4 @@ function App() {
 }
 
 export default App;
+//can't export two
