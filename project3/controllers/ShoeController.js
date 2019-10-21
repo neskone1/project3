@@ -30,10 +30,10 @@ module.exports = {
         .catch(err => console.log(err));
     },
     
-    shoeToRoom: (req, res) => {
-        db.shoes
-        .create(req.body)
-        .then(dbModel => res.json(dbModel))
-        .catch(err => res.status(422).json(err))
-    }
+    // shoeToRoom: (req, res) => {
+    //     db.shoes
+    //     .create(req.body)
+    //     .then(dbModel => res.json(dbModel))
+    //     .catch(err => res.status(422).json(err))
+    // }
 }

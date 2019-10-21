@@ -3,11 +3,8 @@ import Hero from "../components/Hero";
 import Container from "../components/Container";
 import Row from "../components/Row";
 import Col from "../components/Col";
-// import API from '../utils/API';
 import "./style.css";
 function About() {
-
-
   return (
     <div>
       <Hero backgroundImage="http://ward1.com/wp-content/uploads/Ward-1-Design-Sneaker-Room.jpeg">
@@ -22,6 +19,7 @@ function About() {
         </Row>
         <Row>
           <Col size="md-12">
+
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc aliquet diam tortor, id
               consequat mauris ullamcorper eu. Orci varius natoque penatibus et magnis dis
