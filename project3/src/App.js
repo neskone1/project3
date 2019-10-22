@@ -5,11 +5,13 @@ import About from "./pages/About";
 import myRoom from "./pages/myRoom";
 import Search from "./pages/Search";
 import newsFeed from "./pages/newsFeed";
-import Login from "./pages/Login"
+import Login from "./pages/Login";
+import Logout from "./pages/Logout";
 import Navbar from "./components/headerComponent/header";
 import Footer from "./components/Footer";
 import Wrapper from "./components/Wrapper";
-import Main from "./components/Main";
+// import Main from "./components/Main";
+
 // import Auth from "./service";
 
 
@@ -37,11 +39,11 @@ import Main from "./components/Main";
 //         {this.state.loggedIn ? <Login /> : <newsFeed />}
 //         {this.state.loggedIn ? (
 //           <button onClick={() => auth.logout()} className="log-in">
-//             Log Out
+//             Logout
 //           </button>
 //         ) : (
 //           <button onClick={() => auth.login()} className="log-in">
-//             Log In
+//             Login
 //           </button>
 //         )}
 //       </div>
@@ -61,10 +63,11 @@ function App() {
           <Route exact path="/search" component={Search} />
           <Route exact path="/newsFeed" component={newsFeed} />
           <Route exact path="/Login" component={Login} />
+          <Route exact path="/" component={Logout} /> 
                 
           
         </Wrapper>
-        <Main />
+        {/* <Main /> */}
         <Footer />
       </div>
     </Router>
@@ -72,4 +75,3 @@ function App() {
 }
 
 export default App;
-//can't export two

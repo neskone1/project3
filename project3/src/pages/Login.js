@@ -72,3 +72,5 @@ function Login() {
 // }
 
 export default Login;
+
+//add logout as a component on a different file? then export to app.js?
