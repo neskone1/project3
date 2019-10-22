@@ -6,7 +6,7 @@ import myRoom from "./pages/myRoom";
 import Search from "./pages/Search";
 import newsFeed from "./pages/newsFeed";
 import Login from "./pages/Login";
-import Logout from "./pages/Logout";
+// import Logout from "./pages/Logout";
 import Navbar from "./components/headerComponent/header";
 import Footer from "./components/Footer";
 import Wrapper from "./components/Wrapper";
@@ -63,7 +63,7 @@ function App() {
           <Route exact path="/search" component={Search} />
           <Route exact path="/newsFeed" component={newsFeed} />
           <Route exact path="/Login" component={Login} />
-          <Route exact path="/" component={Logout} /> 
+          {/* <Route exact path="/" component={Logout} />  */}
                 
           
         </Wrapper>
