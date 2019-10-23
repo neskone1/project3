@@ -1,5 +1,5 @@
 const express = require("express");
-
+// const keys = requi re("./keys");
 const mongoose = require("mongoose");
 const routes = require("./routes");
 const app = express();
@@ -17,7 +17,7 @@ app.use(routes);
 
 // Connect to the Mongo DB
 mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://localhost/reactreadinglist"
+  process.env.MONGODB_URI || "mongodb://localhost/sneakerroom"
 );
 
 // Start the API server

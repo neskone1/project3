@@ -4,8 +4,8 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import About from "./pages/About";
 import myRoom from "./pages/myRoom";
 import Search from "./pages/Search";
-import newsFeed from "./pages/newsFeed";
-
+// import newsFeed from "./pages/newsFeed";
+// imp  ort Login from "./pages/Login"
 import Navbar from "./components/headerComponent/header";
 import Footer from "./components/Footer";
 import Wrapper from "./components/Wrapper";
@@ -21,7 +21,8 @@ function App() {
           <Route exact path="/about" component={About} />
           <Route exact path="/myRoom" component={myRoom} />
           <Route exact path="/search" component={Search} />
-          <Route exact path="/newsFeed" component={newsFeed} />
+          {/* <Route exact path="/newsFeed" component={newsFeed} /> */}
+          {/* <Route exact path="/Login" component={Login} /> */}
           
           
           
