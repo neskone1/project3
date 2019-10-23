@@ -73,7 +73,7 @@ function Header() {
                 clientId="794209733864-0sh0q593bh0sidd62si1f8ai7tkno8rh.apps.googleusercontent.com"
                 buttonText="Logout"
                 // onLogoutSuccess={logout}
-                onLogoutSuccess={responseGoogle}
+                onLogoutSuccess={responseGoogle} //should be logout instead of responseGoogle
                 onFailure={responseGoogle}
               >
               </GoogleLogout>
@@ -81,7 +81,11 @@ function Header() {
 
 
 
-              {/* <button className="btn young-passion-gradient color-block mb-3 mx-auto waves-effect" onClick={Logout}>
+              {/* 
+              render={renderProps => (
+                  <button className="btn young-passion-gradient color-block mb-3 mx-auto waves-effect">Logout</button>
+                )} ------->THIS IS FOR CHANGING HOW THE LOGIN/LOGOUT BUTTON RENDERS              
+              <button className="btn young-passion-gradient color-block mb-3 mx-auto waves-effect" onClick={Logout}>
               Logout
               </button> */}
 
