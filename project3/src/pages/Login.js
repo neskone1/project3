@@ -50,27 +50,5 @@ function Login() {
   );
 }
 
-// class App extends Component {
-//   render() {
-//     let mainComponent = ""
-//     switch(this.props.location) {
-//       case "":
-//       mainComponent = <Login />;
-//       break;
-//       case "newsFeed":
-//         mainComponent = <newsFeed />;
-//         break;
-//         default:
-//           mainComponent = <Login />;
-//     }
-//     return (
-//       <div>
-//         {mainComponent}
-//       </div>
-//     )
-//   }
-// }
 
 export default Login;
-
-//add logout as a component on a different file? then export to app.js?
