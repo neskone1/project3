@@ -3,9 +3,8 @@ const Schema = mongoose.Schema;
 
 const shoesSchema = new Schema({
   name: { type: String, required: true },
-  price: { type: Number, required: true},
+  price: { type: String, required: true},
   image: {type: String}
-  // year: { type: Date, default: Date.now }
 });
 
 const shoes = mongoose.model("shoes", shoesSchema);

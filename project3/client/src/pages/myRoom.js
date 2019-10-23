@@ -1,73 +1,55 @@
-import React from "react";
-import { Link } from "react-router-dom";
-
+import React, { Component } from "react";
 import Container from "../components/Container";
 import Row from "../components/Row";
 import Col from "../components/Col";
 import "./style.css";
-import ShoeLogo from "../ShoeLogo.svg"
+import ShoeCard from "../components/shoeCard";
+import API from "../utils/API";
 
 
 
 
-function myRoom () {
+class myRoom extends Component {
+  // state = {
+  //   shoes:[{}]
+  // };
+
+  // componentDidMount() {
+  //   this.getAllShoes();
+  // };
+
+  // getAllShoes = () => {
+  //   API.getShoes()
+  //   .then(res => this.setState({ shoes: res.data }))
+  //   .catch(err => console.log(err))
+  // }
+
+
+
+  render() {
     return(
-        <div>
+      <div>
         <Container style={{ marginTop: 20, }}>
-        <Row>
+          <Row>
+            <Col size="md-12">
+              <h1>Welcome To My Room!</h1>
+            </Col>
+          </Row>
+          <Row>
           <Col size="md-12">
-            <h1>Welcome To My Room!</h1>
+            <Row>
+              {this.state.shoes.map(shoe => (
+                <ShoeCard alt="" src={shoe.link} name={shoe.shoeName} price={shoe.price}  />
+              ))};
+            </Row>   
           </Col>
         </Row>
-        <Row>
-          <Col size="lg-12">
-    <div className= "card">
-    
-    <div className= "img-container">
-    <img id="shoeLogo" alt={ "shoes"}
-    src={ShoeLogo}/>
-    </div>
-    
-    
-    <div className="content">
-    <ul>
-        <li>
-            <strong>Name:</strong>{}
-        </li>
-        <hr></hr> 
-        <li>
-        <strong>Brand:</strong>{}
-        </li>
-        <hr></hr> 
-        <li>
-        <strong>Year:</strong>{}
-        </li>
-        
-
-    </ul>
-    
-    </div>
-
-    </div>
-    <Link
-          
-          to="/myRoom"> 
-          <button id= "Remove" className="btn btn-red color-block mb-3 mx-auto waves-effect">
-         Remove
-          </button>
-          
-        </Link>
-    
-    
-
-    </Col>
-        </Row>
-    </Container>
-      
-     
+        </Container>
       </div>
-      );
-      }
+        
+      
+    )};
+}
       
       
 

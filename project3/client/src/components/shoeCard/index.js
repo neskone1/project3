@@ -5,19 +5,27 @@ import { Col, Row, Container } from "../Grid";
 
 import "./style.css";
 
+
+
+
 function ShoeCard(props) {
+
   return (
         <div className="card" id="cardBox">
             <div className="img-container">
-                <img alt={props.alt} src={props.src}/>
+                <img alt={""} src={props.src}/>
             </div>
           <Row>
-              <Col size="sm-6">
+              <Col size="sm-6" id="info">
                   <span id="flame">
-                      <IoMdFlame />
+                      <IoMdFlame onClick={() => props.addShoe({
+                          name: props.name,
+                          price: props.price,
+                          image: props.src
+                      })} />
                   </span>
   
-                  <span id="info">
+                  <span>
                       Name: {props.name}
                       <br></br> 
                       Price: {props.price}

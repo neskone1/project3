@@ -3,26 +3,33 @@ import Hero from "../components/Hero";
 import { Col, Row, Container } from "../components/Grid";
 import API from "../utils/API";
 import ShoeCard from "../components/shoeCard";
-
-
 import "./style.css";
+
 
 class Search extends Component {
   state = {
-    shoes: []
+    shoes: [{}] 
   };
-
+  
   componentDidMount() {
     this.shoeScrape();
   };
-
-
+  
   shoeScrape = () => {
     // console.log('TEST BUTTON.')
     API.getShoes()
     .then(res => this.setState({ shoes: res.data }))
+    .catch(err => console.log(err))
+  }
+
+  addShoe = shoe => {
+    console.log(shoe);
+
+    API.saveShoes(shoe)
+    .then(res => console.log(res, "Added to DB"))
     .catch(err => console.log(err));
-  };
+  }
+
 
   render() {
     return (
@@ -46,7 +53,7 @@ class Search extends Component {
           <Col size="md-12">
             <Row>
               {this.state.shoes.map(shoe => (
-                <ShoeCard alt="" src={shoe.link} />
+                <ShoeCard alt="" src={shoe.link} name={shoe.shoeName} price={shoe.price} addShoe={this.addShoe} />
               ))};
             </Row>   
           </Col>

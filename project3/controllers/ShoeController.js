@@ -21,7 +21,7 @@ module.exports = {
                     price: price,
                     link: imgLink
                 })
-                return i < 11;
+                return i < 25;
             }) 
 
             console.log(results);
@@ -30,10 +30,23 @@ module.exports = {
         .catch(err => console.log(err));
     },
     
-    // shoeToRoom: (req, res) => {
-    //     db.shoes
-    //     .create(req.body)
-    //     .then(dbModel => res.json(dbModel))
-    //     .catch(err => res.status(422).json(err))
-    // }
+    shoeToRoom: (req, res) => {
+        let shoe = {
+            name: req.body.name.trim(),
+            image: req.body.image.trim(),
+            price: req.body.price.trim()
+        }
+        // console.log('THE SHOE', shoe);
+        db.shoes
+        .create(shoe)
+        .then(dbModel => res.send("SAVE COMPLETE"))
+        .catch(err => res.status(422).json(err))
+    },
+
+    getShoes: (req, res) => {
+        db.shoes
+        .find(req.query)
+        .then(dbModel => res.json(dbModel))
+        .catch(err => res.status(422).json(err)) 
+    }
 }
