@@ -2,13 +2,19 @@ import React, { Component } from "react";
 // import ReactDOM from "react-dom";
 // import { Gallery, GalleryImage } from "react";
 import { Fade } from 'react-slideshow-image';
+import "./style.css";
+
 const fadeImages = [
     "https://image.goat.com/crop/3500/attachments/micropost_pictures/images/017/071/235/original/temp1545076054.jpeg",
     "https://image.goat.com/crop/3500/attachments/micropost_pictures/images/016/697/676/original/temp1543954087.jpeg",
     "https://image.goat.com/crop/3500/attachments/micropost_pictures/images/026/582/293/original/temp1569809675.jpeg",
     "https://image.goat.com/crop/3500/attachments/micropost_pictures/images/017/078/236/original/temp1545087503.jpeg",
     "https://image.goat.com/crop/3500/attachments/micropost_pictures/images/013/769/006/original/temp1533578886.jpeg",
-    "https://image.goat.com/crop/3500/attachments/micropost_pictures/images/021/685/991/original/temp1558404697.jpeg"
+    "https://image.goat.com/crop/3500/attachments/micropost_pictures/images/021/685/991/original/temp1558404697.jpeg",
+    "https://image.goat.com/crop/3500/attachments/micropost_pictures/images/012/829/113/original/temp1529756935.jpeg",
+    "https://image.goat.com/crop/3500/attachments/micropost_pictures/images/025/119/226/original/temp1566659306.jpeg",
+    "https://image.goat.com/crop/3500/attachments/micropost_pictures/images/017/612/295/original/temp1546717803.jpeg",
+    "https://image.goat.com/crop/3500/attachments/micropost_pictures/images/018/290/324/original/temp1548765109.jpeg"
   ];
   const fadeProperties = {
     duration: 5000,
