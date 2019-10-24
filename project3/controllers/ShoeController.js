@@ -6,7 +6,7 @@ console.log("helo")
 
 module.exports = {          
     shoeScrape: (req, res) => {
-        axios.get("https://www.kicksusa.com/sale-mens-shoes.html")
+        axios.get("https://www.kicksusa.com/mens-basketball-shoes.html?brands=78")
         .then(function(response) {
             const $ = cheerio.load(response.data);
             const results = [];
@@ -19,9 +19,11 @@ module.exports = {
                 results.push({ 
                     shoeName: shoeName,
                     price: price,
-                    link: imgLink
+                    link: imgLink,
+                    
+
                 })
-                return i < 11;
+                return i < 40;
             }) 
 
             console.log(results);

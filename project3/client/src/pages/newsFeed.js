@@ -29,6 +29,7 @@ function newsFeed() {
         <Row>
 
           <div className="content">
+          {App}
 
           </div>
 
@@ -55,6 +56,7 @@ function App() {
   }, [index]);
 
   return (
+    
     <Gallery
       style={{
         background: "black",
@@ -74,7 +76,7 @@ function App() {
 }
 
 const rootElement = document.getElementById("root");
-// ReactDOM.render(<App />, rootElement);
+//ReactDOM.render(<App />, rootElement);
 
 
 

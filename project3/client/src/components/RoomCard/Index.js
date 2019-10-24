@@ -5,7 +5,7 @@ import { Col, Row, Container } from "../Grid";
 
 import "./style.css";
 
-function ShoeCard(props) {
+function RoomCard(props) {
   return (
         <div className="card" id="cardBox">
             <div className="img-container">
@@ -19,21 +19,20 @@ function ShoeCard(props) {
                   </span>
   <ul>
                   <span id="info">
-                      Name: {props.shoeName}
+                      Name: NIKE{props.shoeName}
                       <hr></hr> 
-                      Price: {props.price}
+                      Price: <h3>$299.99{props.price}</h3> 
                       <hr></hr> 
-                      Year: {props.year}
-                  </span>
-                  <hr></hr> 
-        <Link to="/myRoom"> 
-          <button id= "Add" className="btn purple-gradient color-block mb-3 mx-auto waves-effect">
-            Add
+                     </span>
+                  
+        <Link to="/"> 
+          <button id= "Remove" className="btn danger-color color-block mb-3 mx-auto waves-effect" >
+            Remove
           </button>
        </Link>
       <Link to="/myRoom">
           <button id= "Share" className="btn purple-gradient color-block mb-3 mx-auto waves-effect">
-            Share
+            Share 
          </button>               
        </Link>
      </ul>
@@ -50,4 +49,4 @@ function ShoeCard(props) {
   
  
 
-export default ShoeCard;
+export default RoomCard;
