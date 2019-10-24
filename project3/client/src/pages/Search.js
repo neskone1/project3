@@ -8,12 +8,30 @@ import "./style.css";
 
 class Search extends Component {
   state = {
-    shoes: [{}] 
+    shoes: [{}], 
+    search: ""
   };
   
   componentDidMount() {
     this.shoeScrape();
   };
+
+  handleInputChange = event => {
+    // Destructure the name and value properties off of event.target
+    // Update the appropriate state
+    const value = event.target.value;
+    this.setState({
+      shoes: value
+    });
+  };
+
+  handleFormSubmit = event => {
+    event.preventDefault();
+    this.findshoebrand()
+  };
+
+  fin
+  
   
   shoeScrape = () => {
     // console.log('TEST BUTTON.')
@@ -38,8 +56,8 @@ class Search extends Component {
         <h1>Sneaker Room</h1>
         <h2> Search for your next pair!</h2>
         
-        <div class="active-pink-3 active-pink-4 mb-4">
-          <input className="form-control"  type="text" placeholder="Search" aria-label="Search"></input>
+        <div className="active-pink-3 active-pink-4 mb-4">
+          <input className="form-control"  type="text" placeholder="Addidas, Jordans, Nike ..." aria-label="Search"></input>
         </div>
         <button className="btn aqua-gradient waves-effect" type="submit">Search</button>
       </Hero>
@@ -53,7 +71,13 @@ class Search extends Component {
           <Col size="md-12">
             <Row>
               {this.state.shoes.map(shoe => (
-                <ShoeCard alt="" src={shoe.link} name={shoe.shoeName} price={shoe.price} addShoe={this.addShoe} />
+                <ShoeCard 
+                  alt="" 
+                  src={shoe.link} 
+                  name={shoe.shoeName} 
+                  price={shoe.price} 
+                  addShoe={this.addShoe} 
+                />
               ))};
             </Row>   
           </Col>

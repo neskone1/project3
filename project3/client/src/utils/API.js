@@ -7,9 +7,9 @@ export default {
     // console.log("TEST API");
     return axios.get("/api/shoe/scrape");
   },
-  // Gets shoes with the given id
-  getAllShoes: function(id) {
-    return axios.get("/api/shoes/" + id);
+  // Gets shoes in the DB
+  allShoes: function() {
+    return axios.get("/api/shoe/savedShoe");
   },
   // Deletes shoes with the given id
   // deleteShoes: function(id) {
