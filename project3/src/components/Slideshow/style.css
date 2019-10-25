@@ -4,7 +4,7 @@
     margin: center; }
     
   h3 {
-    text-align: center; }
+    text-align: auto; }
   
   .each-slide > div {
     display: center;
@@ -25,7 +25,7 @@
   }
   
   .each-fade .image-container {
-    width: 75%;
+    width: 50%;
     overflow: center;
   }
   
@@ -38,6 +38,6 @@
     display: center;
     justify-content: center;
     align-items: center;
-    margin: 0;
+    margin: 50;
     background: #adceed;
   }
