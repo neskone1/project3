@@ -1,16 +1,21 @@
 //authentication imports
 const express = require("express");
+<<<<<<< HEAD
 const jwt = require("express-jwt");
 const jwks - require("jwks-rsa");
 const path = require("path");
 const config = require("./config")
 const router = express.Router();
 
+=======
+// const keys = requi re("./keys");
+>>>>>>> 9031c7e27d8f9abed27f2253d6233cc5f2d01940
 const mongoose = require("mongoose");
 const routes = require("./routes");
 const app = express();
 const PORT = process.env.PORT || 3001;
 
+<<<<<<< HEAD
 //======================================================================//
 //scratched the old code, will be using auth0
 
@@ -18,6 +23,8 @@ const PORT = process.env.PORT || 3001;
 
 //======================================================================//
 
+=======
+>>>>>>> 9031c7e27d8f9abed27f2253d6233cc5f2d01940
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());

@@ -19,8 +19,18 @@ function Header() {
       </div>
       <div className="logo">
       </div>
+<<<<<<< HEAD:project3/src/components/headerComponent/header.js
       <nav>
         <ul>
+=======
+
+      
+    
+    
+    
+    <nav >
+      <ul>
+>>>>>>> 9031c7e27d8f9abed27f2253d6233cc5f2d01940:project3/client/src/components/headerComponent/header.js
           <li className="first">
             <Link
               to="/Login">
