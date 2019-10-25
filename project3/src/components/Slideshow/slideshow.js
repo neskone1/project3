@@ -17,8 +17,8 @@ const fadeImages = [
     "https://image.goat.com/crop/3500/attachments/micropost_pictures/images/018/290/324/original/temp1548765109.jpeg"
   ];
   const fadeProperties = {
-    duration: 5000,
-    transitionDuration: 500,
+    duration: 3000,
+    transitionDuration: 300,
     infinite: false,
     indicators: true,
     onChange: (oldIndex, newIndex) => {
@@ -112,6 +112,6 @@ const fadeImages = [
 //   }
 
 // const rootElement = document.getElementById("root");
-// // ReactDOM.render(<Slideshow />, rootElement);
+// ReactDOM.render(<Slideshow />, rootElement);
 
   export default Slideshow;
