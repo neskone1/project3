@@ -1,23 +1,24 @@
 
 .slide-container {
-    width: 100%;
-    margin: center; }
+    width: 40%;
+    margin: flex;
+    position: relative; }
     
   h3 {
-    text-align: auto; }
+    text-align: center; }
   
   .each-slide > div {
     display: center;
     align-items: center;
-    justify-content: center;
-    background-size: center;
+    justify-content: flex;
+    background-size: flex;
     height: 100px;
   }
   
   .each-slide span {
-    padding: 50px;
+    padding: 100px;
     background: #efefef;
-    text-align: center;
+    text-align: flex;
   }
   
   .each-fade {
@@ -25,19 +26,21 @@
   }
   
   .each-fade .image-container {
-    width: 50%;
-    overflow: center;
+    width: 100%;
+    overflow: flex;
+    position: center;
   }
   
   .each-fade .image-container img {
-    width: 75%;
+    width: 100%;
+    position: center;
   }
   
   .each-fade h2 {
-    width:25%;
+    width:100%;
     display: center;
     justify-content: center;
     align-items: center;
-    margin: 50;
+    margin: 0;
     background: #adceed;
   }
