@@ -38,8 +38,6 @@ function newsFeed() {
   );
 }
 
-
-
 // function App() {
 //   const [index, setIndex] = React.useState(0);
 //   React.useEffect(() => {
