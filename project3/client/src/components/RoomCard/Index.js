@@ -30,11 +30,9 @@ function RoomCard(props) {
             Remove
           </button>
        </Link>
-      <Link to="/myRoom">
-          <button id= "Share" className="btn purple-gradient color-block mb-3 mx-auto waves-effect">
-            Share 
-         </button>               
-       </Link>
+         <a id= "Share" href= "https://www.kicksusa.com/mens-basketball-shoes.html?brands=78" className="btn purple-gradient color-block mb-3 mx-auto waves-effect">
+            Find 
+         </a>
      </ul>
 
               </Col>

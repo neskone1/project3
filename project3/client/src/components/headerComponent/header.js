@@ -31,7 +31,7 @@ function Header() {
             <GoogleLogin
               clientId="794209733864-0sh0q593bh0sidd62si1f8ai7tkno8rh.apps.googleusercontent.com"
               render={renderProps => (
-                <button onClick={renderProps.onClick} disabled={renderProps.disabled} className="btn aqua-gradient color-block mb-3 mx-auto waves-effect">Login</button>
+                <button onClick={renderProps.onClick} disabled={renderProps.disabled} className="btn peach-gradient color-block mb-3 mx-auto waves-effect">Login</button>
               )}
               onSuccess={responseGoogle}
               onFailure={responseGoogle}
@@ -81,7 +81,7 @@ function Header() {
             <GoogleLogout
               clientId="794209733864-0sh0q593bh0sidd62si1f8ai7tkno8rh.apps.googleusercontent.com"
               render={renderProps => (
-                <button onClick={renderProps.onClick} disabled={renderProps.disabled} className="btn aqua-gradient color-block mb-3 mx-auto waves-effect">Logout</button>
+                <button onClick={renderProps.onClick} disabled={renderProps.disabled} className="btn peach-gradient color-block mb-3 mx-auto waves-effect">Logout</button>
               )}
               // buttonText="Logout"
               // onLogoutSuccess={logout}

@@ -1,0 +1,45 @@
+.slide-container {
+    width: 40%;
+    margin: flex;
+    position: center; }
+    
+  h3 {
+    text-align: center; }
+  
+  .each-slide > div {
+    display: center;
+    align-items: center;
+    justify-content: flex;
+    background-size: flex;
+    height: 100px;
+  }
+  
+  .each-slide span {
+    padding: 100px;
+    background: #efefef;
+    text-align: flex;
+  }
+  
+  .each-fade {
+    display: center;
+  }
+  
+  .each-fade .image-container {
+    width: 100%;
+    overflow: flex;
+    position: center;
+  }
+  
+  .each-fade .image-container img {
+    width: 100%;
+    position: center;
+  }
+  
+  .each-fade h2 {
+    width:100%;
+    display: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background: #adceed;
+  }
