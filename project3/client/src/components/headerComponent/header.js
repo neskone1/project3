@@ -27,7 +27,7 @@ function Header() {
       <nav >
         <ul>
           <li className="first">
-
+<Link>
             <GoogleLogin
               clientId="794209733864-0sh0q593bh0sidd62si1f8ai7tkno8rh.apps.googleusercontent.com"
               render={renderProps => (
@@ -37,7 +37,7 @@ function Header() {
               onFailure={responseGoogle}
               cookiePolicy={'single_host_origin'}
             />
-
+</Link>
           </li>
 
           <li className="second">
@@ -77,7 +77,7 @@ function Header() {
           </li>
 
           <li>
-
+<Link>
             <GoogleLogout
               clientId="794209733864-0sh0q593bh0sidd62si1f8ai7tkno8rh.apps.googleusercontent.com"
               render={renderProps => (
@@ -89,7 +89,7 @@ function Header() {
               onFaliure={responseGoogle}
             >
             </GoogleLogout>
-
+            </Link>
           </li>
 
 

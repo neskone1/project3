@@ -21,7 +21,7 @@ function RoomCard(props) {
                   <span id="info">
                       Name: NIKE{props.shoeName}
                       <hr></hr> 
-                      Price: <h3>$299.99{props.price}</h3> 
+                      Price: <h3>$100.00{props.price}</h3> 
                       <hr></hr> 
                      </span>
                   

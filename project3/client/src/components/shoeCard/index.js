@@ -19,9 +19,9 @@ function ShoeCard(props) {
                   </span>
   <ul>
                   <span id="info">
-                      Name: NIKE {props.shoeNam}
+                      Name: Nike {props.shoeNam}
                       <hr></hr> 
-                      Price: $299.99 {props.price}
+                      Price: $100.00 {props.price}
                       <hr></hr> 
                       Year: 2019 {props.year}
                   </span>

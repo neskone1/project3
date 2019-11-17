@@ -1,5 +1,6 @@
 const express = require("express");
 // const keys = requi re("./keys");
+const session = require("express-session");
 const mongoose = require("mongoose");
 const routes = require("./routes");
 const app = express();
@@ -12,6 +13,15 @@ app.use(express.json());
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
+
+app.use(require('serve-static')(__dirname + '/../../public'));
+
+app.use(
+    require('express-session')({
+        secret: 'keyboard cat',
+        resave: false,
+        saveUninitialized: false
+    }));
 // Add routes, both API and view
 app.use(routes);
 
